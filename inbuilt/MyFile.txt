@@ -1,0 +1,3 @@
+This is data that is written using fs package
+Appended text 
+Appended text
