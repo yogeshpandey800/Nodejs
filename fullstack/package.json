@@ -1,0 +1,22 @@
+{
+  "name": "fullstackapp",
+  "version": "1.0.0",
+  "description": "node with ejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Yogesh",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "mongodb": "^4.14.0",
+    "morgan": "^1.11.0"
+  }
+}
