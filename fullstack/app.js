@@ -3,14 +3,20 @@ let app = express();
 let dotenv = require('dotenv');
 dotenv.config()
 let port = process.env.PORT || 6700;
+let categoryRouter = require('./src/controller/CategoryRouter');
+let productRouter = require('./src/controller/ProductRouter');
+
+
 
 app.get('/', (req, res) => {
     res.send('Hi from Express');
 })
 
-app.get('/test', (req, res) => {
-    res.send('test route');
-})
+
+
+app.use('/category', categoryRouter);
+app.use('/products', productRouter);
+
 
 app.listen(port, (err) => {
     if(err) throw err;
