@@ -28,7 +28,7 @@ const category = [
 
 categoryRouter.route('/')
     .get((req,res) =>{
-        res.send(category);
+        res.render('category', {title:'Category Page', category});
     })
 
 categoryRouter.route('/details')

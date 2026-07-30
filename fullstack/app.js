@@ -25,7 +25,7 @@ app.set('view engine', 'ejs')
 app.get('/', (req, res) => {
     //res.send('Hi from Express');
 
-    res.render('index')
+    res.render('index', {title:'Home Page'})
 })
 
 
