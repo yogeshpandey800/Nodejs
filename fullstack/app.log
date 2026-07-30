@@ -1,1 +1,14 @@
-::ffff:127.0.0.1 - - [29/Jul/2026:10:14:00 +0000] "GET / HTTP/1.1" 304 -
+::1 - - [30/Jul/2026:07:30:34 +0000] "GET / HTTP/1.1" 200 9525
+::1 - - [30/Jul/2026:07:30:35 +0000] "GET /css/bootstrap.min.css HTTP/1.1" 200 109518
+::1 - - [30/Jul/2026:07:30:35 +0000] "GET /css/styles.css HTTP/1.1" 200 2512
+::1 - - [30/Jul/2026:07:30:35 +0000] "GET /js/bootstrap.min.js HTTP/1.1" 200 31819
+::1 - - [30/Jul/2026:07:30:36 +0000] "GET /fonts/glyphicons-halflings-regular.woff HTTP/1.1" 404 178
+::1 - - [30/Jul/2026:07:30:36 +0000] "GET /fonts/glyphicons-halflings-regular.ttf HTTP/1.1" 404 177
+::1 - - [30/Jul/2026:07:30:36 +0000] "GET /favicon.ico HTTP/1.1" 404 150
+::1 - - [30/Jul/2026:07:30:47 +0000] "GET / HTTP/1.1" 304 -
+::1 - - [30/Jul/2026:07:30:48 +0000] "GET /css/bootstrap.min.css HTTP/1.1" 304 -
+::1 - - [30/Jul/2026:07:30:48 +0000] "GET /css/styles.css HTTP/1.1" 304 -
+::1 - - [30/Jul/2026:07:30:48 +0000] "GET /js/bootstrap.min.js HTTP/1.1" 304 -
+::1 - - [30/Jul/2026:07:30:48 +0000] "GET /fonts/glyphicons-halflings-regular.woff HTTP/1.1" 404 178
+::1 - - [30/Jul/2026:07:30:48 +0000] "GET /fonts/glyphicons-halflings-regular.ttf HTTP/1.1" 404 177
+::1 - - [30/Jul/2026:07:32:50 +0000] "GET / HTTP/1.1" 200 21
