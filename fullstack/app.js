@@ -5,8 +5,17 @@ dotenv.config()
 let morgan = require('morgan');
 let fs = require('fs');
 let port = process.env.PORT || 6700;
-let categoryRouter = require('./src/controller/CategoryRouter');
-let productRouter = require('./src/controller/ProductRouter');
+
+
+
+let menu = [
+    {name:'Category',link:'/category'},
+    {name:'Products',link:'/products'}
+]
+
+
+let categoryRouter = require('./src/controller/CategoryRouter')(menu);
+let productRouter = require('./src/controller/ProductRouter')(menu);
 
 
 
@@ -25,7 +34,7 @@ app.set('view engine', 'ejs')
 app.get('/', (req, res) => {
     //res.send('Hi from Express');
 
-    res.render('index', {title:'Home Page'})
+    res.render('index', {title:'Home Page',menu})
 })
 
 
